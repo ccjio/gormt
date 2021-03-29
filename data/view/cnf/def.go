@@ -12,10 +12,10 @@ var EImportsHead = map[string]string{
 
 // TypeMysqlDicMp Accurate matching type.精确匹配类型
 var TypeMysqlDicMp = map[string]string{
-	"smallint":            "int16",
-	"smallint unsigned":   "uint16",
+	"smallint":            "int",
+	"smallint unsigned":   "int16",
 	"int":                 "int",
-	"int unsigned":        "uint",
+	"int unsigned":        "int",
 	"bigint":              "int64",
 	"bigint unsigned":     "uint64",
 	"varchar":             "string",
@@ -23,10 +23,10 @@ var TypeMysqlDicMp = map[string]string{
 	"date":                "datatypes.Date",
 	"datetime":            "time.Time",
 	"bit(1)":              "[]uint8",
-	"tinyint":             "int8",
-	"tinyint unsigned":    "uint8",
-	"tinyint(1)":          "bool", // tinyint(1) 默认设置成bool
-	"tinyint(1) unsigned": "bool", // tinyint(1) 默认设置成bool
+	"tinyint":             "int",
+	"tinyint unsigned":    "int",
+	"tinyint(1)":          "int", // tinyint(1) 默认设置成bool
+	"tinyint(1) unsigned": "int", // tinyint(1) 默认设置成bool
 	"json":                "datatypes.JSON",
 	"text":                "string",
 	"timestamp":           "time.Time",
@@ -51,14 +51,14 @@ var TypeMysqlMatchList = []struct {
 	Key   string
 	Value string
 }{
-	{`^(tinyint)[(]\d+[)] unsigned`, "uint8"},
-	{`^(smallint)[(]\d+[)] unsigned`, "uint16"},
-	{`^(int)[(]\d+[)] unsigned`, "uint32"},
+	{`^(tinyint)[(]\d+[)] unsigned`, "int"},
+	{`^(smallint)[(]\d+[)] unsigned`, "int"},
+	{`^(int)[(]\d+[)] unsigned`, "int"},
 	{`^(bigint)[(]\d+[)] unsigned`, "uint64"},
 	{`^(float)[(]\d+,\d+[)] unsigned`, "float64"},
 	{`^(double)[(]\d+,\d+[)] unsigned`, "float64"},
-	{`^(tinyint)[(]\d+[)]`, "int8"},
-	{`^(smallint)[(]\d+[)]`, "int16"},
+	{`^(tinyint)[(]\d+[)]`, "int"},
+	{`^(smallint)[(]\d+[)]`, "int"},
 	{`^(int)[(]\d+[)]`, "int"},
 	{`^(bigint)[(]\d+[)]`, "int64"},
 	{`^(char)[(]\d+[)]`, "string"},
