@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/xxjwxc/gormt/data/view/model"
+	"github.com/zcpua/gormt/data/view/model"
 )
 
 // TestTools

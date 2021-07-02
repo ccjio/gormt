@@ -6,14 +6,14 @@ import (
 
 	"github.com/xxjwxc/public/mylog"
 
-	"github.com/xxjwxc/gormt/data/dlg"
-	"github.com/xxjwxc/gormt/data/view/model"
+	"github.com/zcpua/gormt/data/dlg"
+	"github.com/zcpua/gormt/data/view/model"
 
-	"github.com/xxjwxc/gormt/data/config"
+	"github.com/zcpua/gormt/data/config"
 
-	"github.com/xxjwxc/gormt/data/view/model/genmysql"
-	"github.com/xxjwxc/gormt/data/view/model/gensqlite"
 	"github.com/xxjwxc/public/tools"
+	"github.com/zcpua/gormt/data/view/model/genmysql"
+	"github.com/zcpua/gormt/data/view/model/gensqlite"
 )
 
 // Execute exe the cmd

@@ -3,10 +3,10 @@ package genmysql
 import (
 	"strings"
 
-	"github.com/xxjwxc/gormt/data/config"
 	"github.com/xxjwxc/public/mylog"
+	"github.com/zcpua/gormt/data/config"
 
-	"github.com/xxjwxc/gormt/data/view/model"
+	"github.com/zcpua/gormt/data/view/model"
 )
 
 // filterModel filter.过滤 gorm.Model
