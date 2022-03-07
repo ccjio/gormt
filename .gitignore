@@ -7,3 +7,4 @@ db/oauth_db.go
 gormt.yml
 gormt
 vendor
+*.exe
