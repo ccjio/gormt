@@ -8,6 +8,7 @@ var EImportsHead = map[string]string{
 	"fmt":            `"fmt"`,
 	"datatypes.JSON": `"gorm.io/datatypes"`,
 	"datatypes.Date": `"gorm.io/datatypes"`,
+	"decimal.Decimal": `"github.com/shopspring/decimal"`,
 }
 
 // TypeMysqlDicMp Accurate matching type.精确匹配类型
@@ -67,7 +68,7 @@ var TypeMysqlMatchList = []struct {
 	{`^(varbinary)[(]\d+[)]`, "[]byte"},
 	{`^(blob)[(]\d+[)]`, "[]byte"},
 	{`^(binary)[(]\d+[)]`, "[]byte"},
-	{`^(decimal)[(]\d+,\d+[)]`, "float64"},
+	{`^(decimal)[(]\d+,\d+[)]`, "decimal.Decimal"},
 	{`^(mediumint)[(]\d+[)]`, "string"},
 	{`^(double)[(]\d+,\d+[)]`, "float64"},
 	{`^(float)[(]\d+,\d+[)]`, "float64"},
