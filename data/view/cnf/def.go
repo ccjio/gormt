@@ -2,12 +2,12 @@ package cnf
 
 // EImportsHead imports head options. import包含选项
 var EImportsHead = map[string]string{
-	"stirng":         `"string"`,
-	"time.Time":      `"time"`,
-	"gorm.Model":     `"gorm.io/gorm"`,
-	"fmt":            `"fmt"`,
-	"datatypes.JSON": `"gorm.io/datatypes"`,
-	"datatypes.Date": `"gorm.io/datatypes"`,
+	"stirng":          `"string"`,
+	"time.Time":       `"time"`,
+	"gorm.Model":      `"gorm.io/gorm"`,
+	"fmt":             `"fmt"`,
+	"datatypes.JSON":  `"gorm.io/datatypes"`,
+	"datatypes.Date":  `"gorm.io/datatypes"`,
 	"decimal.Decimal": `"github.com/shopspring/decimal"`,
 }
 

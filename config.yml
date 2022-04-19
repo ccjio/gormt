@@ -4,7 +4,7 @@ out_dir : ./model  # 输出目录
 url_tag : json # web url tag(json,db(https://github.com/google/go-querystring))
 language :  # 语言(English,中 文)
 db_tag : gorm # 数据库标签(gorm,db)
-simple : false # 简单输出(默认gorm标签不输出)
+simple : true # 简单输出(默认gorm标签不输出)
 is_out_sql : false # 是否输出 sql 原信息
 is_out_func : true # 是否输出 快捷函数
 is_web_tag : true # 是否打web标记(json标记前提条件)
@@ -21,7 +21,7 @@ db_info:
     password : 123456
     database : matrix
     type: 0 # 数据库类型:0:mysql , 1:sqlite , 2:mssql
-
+#simple = true
 # sqlite
 # db_info:
 #     host : /Users/xxj/Downloads/caoguo # type=1的时候，host为yml文件全路径
