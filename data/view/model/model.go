@@ -264,7 +264,7 @@ func (m *_Model) generateFunc() (genOut []GenOutInfo) {
 			if strings.EqualFold(el.Type, "gorm.Model") {
 				data.Em = append(data.Em, getGormModelElement()...)
 				pkg.AddImport(`"time"`)
-				buildFList(&primary, ColumnsKeyPrimary, "", "int64", "id")
+				buildFList(&primary, ColumnsKeyPrimary, "", "int", "id")
 			} else {
 				typeName := getTypeName(el.Type, el.IsNull)
 				isMulti := (len(el.Index) == 0)
